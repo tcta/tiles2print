@@ -39,5 +39,5 @@ build/
 .DS_Store
 
 # Images
-/output/
+
 test.png

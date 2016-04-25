@@ -25,7 +25,11 @@ Now it should open in your web browser at http://localhost:3000/
 
 MB Studio Classic must be running for this utility to work.
 
-The utility requires ruby 1.9.x, ImageMagick, and the RMagick gem. This can be a pain. On OS X it seems easiest to use Homebrew:
+The utility requires ruby 1.9.x. If you are using rbenv to manage versions of ruby, you may need to switch to the correct version, ie:
+
+	rbenv local 1.9.3-p547 
+
+You also need ImageMagick, and the RMagick gem. This can be a pain if not done right. On OS X it seems easiest to use Homebrew:
 
 	brew install ImageMagick
 	gem install rmagick
