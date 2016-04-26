@@ -3,9 +3,10 @@ A utility for creating ready to print maps (and geoPDFs) from Mapbox Studio Clas
 
 - Requires Mapbox Studio Classic
 - Designed to work with our mb-classic-hikeOSM-print.tm2 style 
-- Currently fixed at 1:50000 scale
+- Currently outputs at 1:50000 scale and 1:25000 scale (the 1:25000 print is twice as big, covers same area)
 - Creates a map with a border that includes coordinates (matching the style gridlines) and title
-- Outputs as PNG and/or geoPDF
+- Outputs as PNG and PDF (TODO: convert to geoPDF)
+- Can be quickly re-run to incorporate new changes in OpenStreetMap
 
 ### Setup
 First, download and Install Mapbox Studio Classic (https://www.mapbox.com/mapbox-studio-classic/)
@@ -47,7 +48,7 @@ Test it:
 	cd tiles2print/
 	ruby tile2print.rb csv/test.csv
 
-This should output a pretty map in output/
+This should output several pretty maps in output/
 
 
 ### Projection and Coordinates
